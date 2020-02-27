@@ -45,7 +45,7 @@ function debug() {
 }
 
 function run() {
-	package && java -jar target/cas.war
+	package && java -jar -Dspring.profiles.include=security target/cas.war
 }
 
 function runalone() {
